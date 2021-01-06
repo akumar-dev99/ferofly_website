@@ -1,13 +1,402 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  display: flex;
+  font-family: Trebuchet, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.h1 {
+  margin-top: 100px;
+  justify-content: center;
+  text-align: center;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 14mm;
+}
+
+.h1about {
+  margin-top: 100px;
+  justify-content: center;
+  text-align: center;
+  font-weight: lighter;
+  color: #262625;
+  padding-bottom: 50px;
+}
+
+h2 {
+  justify-content: center;
+  text-align: center;
+  font-weight: lighter;
+}
+p {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #a0a0a0;
+  font-style: italic;
+  padding: 5px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  width: 100%;
+  background: #262626;
+  overflow: fixed;
+  position: fixed;
+  top: 0;
+  margin-bottom: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+  margin-bottom: 150px !important;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+  padding-top: 20px;
+}
+
+ul {
+  padding: 20;
+  margin: 20;
+  list-style: none;
+  text-align: center;
+}
+.aboutpara {
+  text-align: center;
+  padding-left: 35%;
+  padding-right: 35%;
+  font-size: large;
+  color: gray;
+}
+
+li {
+  float: left;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height:60px;
+  bottom: 10px;
+  left: 20px;
+  background-color: #242424;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+a {
+  padding: 5px;
+  min-width: 100px;
+  max-width: 200px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.fontawesome1 {
+  margin-top: 25%;
+  margin-bottom: 20px;
+}
+
+#Home {
+  height: 800px;
+  display: inline-block;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.homeimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  background-image: url("https://images.unsplash.com/photo-1435575653489-b0873ec954e2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+#About {
+  height: 500px;
+  width: 100%;
+  margin-top: 200px;
+  display: inline-block;
+}
+
+.datepick {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.bookbutton {
+  border: 2px solid white;
+  padding: 10px;
+}
+
+.roomimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  background-image: url("https://images.unsplash.com/photo-1601221998768-c0cdf463a393?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.button {
+  background-color: white; /* Green */
+  border: 1px solid black;
+  color: #252525;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttondiv {
+  padding-left: 30%;
+  padding-top: 5%;
+}
+
+.roomdiv {
+  height: 800px;
+  position: relative;
+  margin: 20px;
+  padding: 10px;
+  position: relative;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 45%;
+  left: 38%;
+}
+
+.stack-top {
+  z-index: 9;
+  margin: 20px; /* for demo purpose  */
+  background-color: white;
+  width: 22%;
+  height: 42%;
+}
+
+.roomh1 {
+  color: #fff;
+  margin: 100px;
+  font-weight: lighter;
+}
+
+.galleryimg {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imagesizegallery {
+  margin-right: 10px;
+  object-fit: cover !important;
+}
+
+.aboutmediv {
+  margin-top: 150px;
+}
+
+#Services {
+  height: 650px;
+  width: 100%;
+  margin-top: 100px;
+  display: inline-block;
+}
+
+.overserviceh1 {
+  margin-top: 150px;
+  justify-content: center;
+  text-align: center;
+  font-weight: lighter;
+  margin-bottom: 70px;
+}
+
+#Gallery {
+  height: 750px;
+  width: 100%;
+  margin-top: 100px;
+  display: inline-block;
+}
+
+.h1gallery {
+  margin-top: 150px;
+  justify-content: center;
+  text-align: center;
+  font-weight: lighter;
+  margin-bottom: 50px;
+}
+.seedoh1 {
+  margin-top: 150px;
+  justify-content: center;
+  text-align: center;
+  font-weight: lighter;
+  margin-bottom: 70px;
+}
+
+#SeeDo {
+  height: 1600px;
+  width: 100%;
+
+  display: inline-block;
+}
+
+#Contact {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  background-color: #f5f5f5;
+
+  display: inline-block;
+}
+
+.contacth1 {
+  margin-top: 150px;
+  justify-content: center;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.contactContainer {
+  background-color: #f5f5f5;
+}
+
+.contacth4 {
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 6mm;
+  color: gray;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.size-12 {
+  font-size: 12px;
+}
+
+.serviceicon {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.serviceh4 {
+  justify-content: center;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.servicerow1 {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.row1 {
+  width: 50%;
+  margin: auto;
+}
+
+.rowp {
+  font-size: 5mm;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.roomp {
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+
+.roomdiv2 {
+  position: relative;
+  margin: 10px;
+  padding: 20px;
+}
+
+.box1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 25%;
+  left: 38%;
+}
+
+.stack-top1 {
+  z-index: 9;
+  margin: 20px; /* for demo purpose  */
+  background-color: white;
+  width: 22%;
+  height: 45%;
+}
+
+.size-36 {
+  width: 85%;
+  height: 30px;
+}
+
+.react-datepicker__input-container input {
+  width: 280px;
+  height: 30px;
+}
+
+.rowinput {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.search {
+  width: 150px;
+  height: 40px;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background: black;
+  color: #fff;
+  font-size: 14px;
+}
+
+.searchname {
+  color: white;
+}
+.rowp1 {
+  font-size: 12px;
+}
+
+
+.float1 {
+  position: fixed;
+  width: 3%;
+  height:20%;
+  bottom: 40%;
+  right: 10px;
+  background-color: white;
+  color: #fff;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
 }
